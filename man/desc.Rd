@@ -4,10 +4,22 @@
 \alias{desc}
 \title{Making descriptive statistics}
 \usage{
-desc(data, vars, group = NULL, whole = TRUE, vars.labels = vars,
-  group.labels = NULL, type.quanti = "mean", test.quanti = "param",
-  test = TRUE, noquote = TRUE, justify = TRUE, digits = 2,
-  file.export = NULL, language = "english")
+desc(
+  data,
+  vars,
+  group = NULL,
+  whole = TRUE,
+  vars.labels = vars,
+  group.labels = NULL,
+  type.quanti = "mean",
+  test.quanti = "param",
+  test = TRUE,
+  noquote = TRUE,
+  justify = TRUE,
+  digits = 2,
+  file.export = NULL,
+  language = "english"
+)
 }
 \arguments{
 \item{data}{data frame to describe in which we can find \code{vars} and \code{group}}

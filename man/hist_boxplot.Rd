@@ -4,8 +4,17 @@
 \alias{hist_boxplot}
 \title{Plot a histogram with a boxplot below}
 \usage{
-hist_boxplot(x, freq = TRUE, density = FALSE, main = NULL,
-  xlab = NULL, ymax = NULL, ...)
+hist_boxplot(
+  x,
+  freq = TRUE,
+  density = FALSE,
+  main = NULL,
+  xlab = NULL,
+  ymax = NULL,
+  col.hist = "lightblue",
+  col.boxplot = "lightblue",
+  ...
+)
 }
 \arguments{
 \item{x}{a numeric vector}
@@ -20,6 +29,10 @@ hist_boxplot(x, freq = TRUE, density = FALSE, main = NULL,
 
 \item{ymax}{numeric value, maximum of the y axis}
 
+\item{col.hist}{color of the histogram}
+
+\item{col.boxplot}{color of the boxplot}
+
 \item{\dots}{other arguments to be passed in \code{hist()}}
 }
 \value{
@@ -30,8 +43,8 @@ Plots a histogram with a boxplot below
 }
 \examples{
 par(mfrow=c(1,2))
-hist_boxplot(rnorm(100),col="lightblue",freq=TRUE)
-hist_boxplot(rnorm(100),col="lightblue",freq=FALSE,density=TRUE)
+hist_boxplot(rnorm(100),col.hist="lightblue",col.boxplot="red",freq=TRUE)
+hist_boxplot(rnorm(100),col.hist="lightblue",col.boxplot="red",freq=FALSE,density=TRUE)
 }
 \author{
 Hugo Varet

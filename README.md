@@ -12,5 +12,4 @@ To install the packHV package from GitHub, open a R session and:
 
 - install devtools with `install.packages("devtools")` (if not installed yet)
 - for Windows users only, install [Rtools](https://cran.r-project.org/bin/windows/Rtools/) or check that it is already installed (needed to build the package)
-- load the devtools R package with `library(devtools)`
-- run `install_github("hvaret/packHV")`
+- run `devtools::install_github("hvaret/packHV")`

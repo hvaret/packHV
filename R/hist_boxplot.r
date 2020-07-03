@@ -8,16 +8,19 @@
 #' @param main character string, main title of the histogram
 #' @param xlab character string, label of the x axis
 #' @param ymax numeric value, maximum of the y axis
+#' @param col.hist color of the histogram
+#' @param col.boxplot color of the boxplot
 #' @param \dots other arguments to be passed in \code{hist()}
 #' @return None
 #' @author Hugo Varet
 #' @examples
 #' par(mfrow=c(1,2))
-#' hist_boxplot(rnorm(100),col="lightblue",freq=TRUE)
-#' hist_boxplot(rnorm(100),col="lightblue",freq=FALSE,density=TRUE)
+#' hist_boxplot(rnorm(100),col.hist="lightblue",col.boxplot="red",freq=TRUE)
+#' hist_boxplot(rnorm(100),col.hist="lightblue",col.boxplot="red",freq=FALSE,density=TRUE)
 
 hist_boxplot=function(x,freq=TRUE,density=FALSE,main=NULL,
-                      xlab=NULL,ymax=NULL,...){
+                      xlab=NULL,ymax=NULL,col.hist="lightblue",
+                      col.boxplot="lightblue",...){
   abs <- deparse(substitute(x))
   if (is.null(xlab)){xlab=abs}
   ted <- hist(x,plot=FALSE)
@@ -36,12 +39,12 @@ hist_boxplot=function(x,freq=TRUE,density=FALSE,main=NULL,
   }
   if (!is.null(ymax)) ylim <- c(-ymax/5,ymax)
   if (is.null(main)){main=paste("Histogram of",abs)}
-  hist(x,ylim=ylim,yaxt="n",xlab=xlab,freq=freq,main=main,...)
+  hist(x,ylim=ylim,yaxt="n",xlab=xlab,freq=freq,main=main,col=col.hist,...)
   axis(2,at=seq(0,ylim[2],length=5))
   usrs <- par()$usr
   par(new=TRUE,bty="n",xaxs="i",yaxs="i",ann=FALSE)
   boxplot(x,horizontal=TRUE,ylim=usrs[1:2],add=TRUE,
-          at=usrs[3]/2,pars=list(boxwex=5),col="lightblue",boxwex=ylim[2]/6)
+          at=usrs[3]/2,pars=list(boxwex=5),col=col.boxplot,boxwex=ylim[2]/6)
   if (density){
     lines(density(x),lwd=2,col="red")
   }
