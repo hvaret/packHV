@@ -13,7 +13,7 @@
 #' @param main character string, main title
 #' @param lwd.spag numeric, width of the spaghetti lines, 1 by default
 #' @param lwd.mean numeric, width of the mean lines, 4 by default
-#' @param ... Other arguments to be passed in \code{\link{plot}}
+#' @param ... Other arguments to be passed in \code{\link[base]{plot}}
 #' @return None
 #' @author Hugo Varet on Anais Charles-Nelson's idea
 #' @examples

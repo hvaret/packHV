@@ -6,7 +6,7 @@
 #' @param vars vector of character string of covariates
 #' @return A matrix containing all the contingency tables between the covariates
 #' @author Hugo Varet
-#' @seealso \code{\link{plot_multi.table}}
+#' @seealso \code{\link[packHV]{plot_multi.table}}
 #' @examples
 #' multi.table(cgd,c("treat","sex","inherit"))
 

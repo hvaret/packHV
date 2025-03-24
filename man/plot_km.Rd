@@ -26,7 +26,7 @@ plot_km(
 )
 }
 \arguments{
-\item{formula}{same formula than in \code{\link{survfit}} (\code{Surv(time,cens)~group} or \code{Surv(time,cens)~1}), where \code{cens} must equal to 0 (censorship) or 1 (failure)}
+\item{formula}{same formula than in \code{\link[survival]{survfit}} (\code{Surv(time,cens)~group} or \code{Surv(time,cens)~1}), where \code{cens} must equal to 0 (censorship) or 1 (failure)}
 
 \item{data}{data frame with \code{time}, \code{cens} and \code{group}}
 
@@ -60,7 +60,7 @@ plot_km(
 
 \item{col}{color(s) of the Kaplan-Meier curve(s)}
 
-\item{\dots}{other arguments to be passed in \code{\link{plot.survfit}}}
+\item{\dots}{other arguments to be passed in \code{\link[survival]{plot.survfit}}}
 }
 \value{
 None

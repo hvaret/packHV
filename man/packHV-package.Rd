@@ -2,6 +2,7 @@
 % Please edit documentation in R/packHV-package.r
 \docType{package}
 \name{packHV-package}
+\alias{packHV}
 \alias{packHV-package}
 \title{A few useful functions for statisticians}
 \description{

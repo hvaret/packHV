@@ -7,11 +7,11 @@
 #' @param pch type of points
 #' @param xlab character string, label of the x axis, \code{NULL} by default
 #' @param ylab character string, label of the y axis, \code{NULL} by default
-#' @param \dots other arguments to be passed in \code{\link{plot}}
+#' @param \dots other arguments to be passed in \code{\link[base]{plot}}
 #' @return None
 #' @author Hugo Varet
 #' @examples
-#' plot_reg(cgd$age,cgd$height,xlab="Age (years)",ylab="Height")
+#' plot_reg(cgd$age, cgd$height, xlab="Age (years)", ylab="Height")
 
 # last updated: oct 6, 2012
 

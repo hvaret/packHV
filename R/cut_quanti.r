@@ -4,7 +4,7 @@
 #'
 #' @param x a numeric vector
 #' @param n numeric, the number of parts: 2 to cut according to the median, and so on...
-#' @param \dots other arguments to be passed in \code{\link{cut}}
+#' @param \dots other arguments to be passed in \code{\link[base]{cut}}
 #' @return A factor vector
 #' @author Hugo Varet
 #' @examples

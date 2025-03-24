@@ -7,7 +7,7 @@
 #' @param main main title of the plot
 #' @return None
 #' @author Hugo Varet
-#' @seealso \code{\link{multi.table}}
+#' @seealso \code{\link[packHV]{multi.table}}
 #' @examples
 #' plot_multi.table(cgd,c("treat","sex","inherit"))
 

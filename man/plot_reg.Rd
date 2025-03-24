@@ -17,7 +17,7 @@ plot_reg(x, y, pch = 19, xlab = NULL, ylab = NULL, ...)
 
 \item{ylab}{character string, label of the y axis, \code{NULL} by default}
 
-\item{\dots}{other arguments to be passed in \code{\link{plot}}}
+\item{\dots}{other arguments to be passed in \code{\link[base]{plot}}}
 }
 \value{
 None
@@ -26,7 +26,7 @@ None
 Plots points with the corresponding linear regression line
 }
 \examples{
-plot_reg(cgd$age,cgd$height,xlab="Age (years)",ylab="Height")
+plot_reg(cgd$age, cgd$height, xlab="Age (years)", ylab="Height")
 }
 \author{
 Hugo Varet

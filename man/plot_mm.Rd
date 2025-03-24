@@ -42,7 +42,7 @@ plot_mm(
 
 \item{lwd.mean}{numeric, width of the mean lines, 4 by default}
 
-\item{...}{Other arguments to be passed in \code{\link{plot}}}
+\item{...}{Other arguments to be passed in \code{\link[base]{plot}}}
 }
 \value{
 None

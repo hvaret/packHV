@@ -2,7 +2,7 @@
 #'
 #' Kaplan-Meier plot with number of subjects at risk below
 #'
-#' @param formula same formula than in \code{\link{survfit}} (\code{Surv(time,cens)~group} or \code{Surv(time,cens)~1}), where \code{cens} must equal to 0 (censorship) or 1 (failure)
+#' @param formula same formula than in \code{\link[survival]{survfit}} (\code{Surv(time,cens)~group} or \code{Surv(time,cens)~1}), where \code{cens} must equal to 0 (censorship) or 1 (failure)
 #' @param data data frame with \code{time}, \code{cens} and \code{group}
 #' @param test boolean, \code{TRUE} to compute and display the p-value of the log-rank test
 #' @param xy.pvalue numeric vector of length 2, coordinates where to display the p-value of the log-rank test
@@ -19,7 +19,7 @@
 #' @param lwd width of the Kaplan-Meier curve(s)
 #' @param lty type of the Kaplan-Meier curve(s)
 #' @param col color(s) of the Kaplan-Meier curve(s)
-#' @param \dots other arguments to be passed in \code{\link{plot.survfit}}
+#' @param \dots other arguments to be passed in \code{\link[survival]{plot.survfit}}
 #' @return None
 #' @author Hugo Varet
 #' @examples

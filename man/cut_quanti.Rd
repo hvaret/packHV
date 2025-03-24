@@ -11,7 +11,7 @@ cut_quanti(x, n, ...)
 
 \item{n}{numeric, the number of parts: 2 to cut according to the median, and so on...}
 
-\item{\dots}{other arguments to be passed in \code{\link{cut}}}
+\item{\dots}{other arguments to be passed in \code{\link[base]{cut}}}
 }
 \value{
 A factor vector

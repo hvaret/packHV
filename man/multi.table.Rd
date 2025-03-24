@@ -21,7 +21,7 @@ Builds a big cross table between several covariates
 multi.table(cgd,c("treat","sex","inherit"))
 }
 \seealso{
-\code{\link{plot_multi.table}}
+\code{\link[packHV]{plot_multi.table}}
 }
 \author{
 Hugo Varet

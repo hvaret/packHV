@@ -23,7 +23,7 @@ Plots a multi cross table on a graph
 plot_multi.table(cgd,c("treat","sex","inherit"))
 }
 \seealso{
-\code{\link{multi.table}}
+\code{\link[packHV]{multi.table}}
 }
 \author{
 Hugo Varet
