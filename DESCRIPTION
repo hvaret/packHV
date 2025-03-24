@@ -3,7 +3,7 @@ Type: Package
 Title: A few Useful Functions for Statisticians
 Version: 2.4
 Date: 2025-03-24
-Author: Hugo Varet
+Authors@R: person(given = "Hugo", family = "Varet", role = c("aut", "cre"), email = "varethugo@gmail.com")
 Maintainer: Hugo Varet <varethugo@gmail.com>
 Depends: survival
 Imports: stats, graphics, WriteXLS (>= 2.3.0)
